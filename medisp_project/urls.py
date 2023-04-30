@@ -23,6 +23,8 @@ router.register(r"users", views.UserViewSet)
 router.register(r"groups", views.GroupViewSet)
 router.register(r"labels", views.LabelModelViewset)
 router.register(r"histimage", views.HistImageModelViewset)
+router.register(r'train_classification_model', views.HistImageViewSet.train_classification_model, basename='train_classification_model')
+
 
 
 
