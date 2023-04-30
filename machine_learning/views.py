@@ -25,3 +25,8 @@ class GroupViewSet(viewsets.ModelViewSet):
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
     permission_classes = [permissions.IsAuthenticated]
+
+
+class LabelModelViewset(viewsets.ModelViewSet):
+queryset = Label.objects.all()
+serializer_class = LabelSerializer
