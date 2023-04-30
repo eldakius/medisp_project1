@@ -33,4 +33,14 @@ class LabelModelViewset(viewsets.ModelViewSet):
     
 class HistImageModelViewset(viewsets.ModelViewSet):
     queryset = HistImage.objects.all()
-    serializer_class = HistImage
+    serializer_class = HistImageSerializer
+    @action(
+        methods=["post"],
+        detail=False,
+        url_path="register-images",
+    )
+    def register_images(self, request):
+        hist_image_serialized = self.get_serializer()
+        return Response(hist_image_serialized.data, status=status.HTTP_200_OK) 
+    
+ 
