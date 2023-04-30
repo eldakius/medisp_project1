@@ -28,5 +28,5 @@ class GroupViewSet(viewsets.ModelViewSet):
 
 
 class LabelModelViewset(viewsets.ModelViewSet):
-queryset = Label.objects.all()
-serializer_class = LabelSerializer
+    queryset = Label.objects.all()
+    serializer_class = LabelSerializer
