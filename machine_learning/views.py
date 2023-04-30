@@ -31,6 +31,6 @@ class LabelModelViewset(viewsets.ModelViewSet):
     queryset = Label.objects.all()
     serializer_class = LabelSerializer
     
-class HistImageViewset(viewsets.ModelViewSet):
+class HistImageModelViewset(viewsets.ModelViewSet):
     queryset = HistImage.objects.all()
     serializer_class = HistImage
